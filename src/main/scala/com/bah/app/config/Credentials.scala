@@ -7,10 +7,10 @@ package com.bah.app.config
 object Credentials {
 
   // Credentials
-  final val HOST: String = "localhost"
-  final val USER: String = "mattymain"
-  final val PASS: String = "newpassword"
-  final val DATABASE: String = "dst"
+  final val HOST: String = ""
+  final val USER: String = ""
+  final val PASS: String = ""
+  final val DATABASE: String = ""
   final val TABLE_NAME: String = "Stages"
 
 }
