@@ -31,11 +31,14 @@ object DSTConnector {
       // Database connection
       connection = DriverManager.getConnection(getUrlString, USER, PASS)
       // Insert statement
-      statement = connection.prepareStatement(Query.getInsertStmt)
+      val query = Query.getInsertStmt
+      statement = connection.prepareStatement(query)
       // Update field values for stage
       // and notes
       statement.setString(1, filename)
       statement.setString(2, stage)
+      // Log insert statement
+      println(s"Executing statement:\n $query")
       // Execute statement
       statement.execute()
       // Close connection
