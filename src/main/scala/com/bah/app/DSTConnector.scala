@@ -16,7 +16,7 @@ object DSTConnector {
    * @param filename (datasource filename)
    * @param stage stage
    */
-  def updateDstStages(filename: String, stage: String): Unit = {
+  def updateDstStages(stage: String, filename: String): Unit = {
 
     // Setup connection parameters
     var connection: Connection = null

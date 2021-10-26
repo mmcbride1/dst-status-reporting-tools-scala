@@ -14,6 +14,6 @@ class DstStatusToolsTestSuite extends FunSuite with BeforeAndAfter {
    * Insert record into test DB (setup on local instance)
    */
   test("Insert a record into test DB") {
-    //updateDstStages("from scala", "loaded")
+    //updateDstStages("loaded", "from scala")
   }
 }
