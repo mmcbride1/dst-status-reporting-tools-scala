@@ -1,14 +1,14 @@
 package com.bah.app
 
-import java.sql.{Connection, DriverManager, PreparedStatement, SQLException}
+import java.sql._
 import com.bah.app.config.Config._
-import com.bah.app.config.Credentials._
+import com.bah.app.config.DBInfo._
 import com.bah.app.config.Query
 
 /**
  * DST connector
  */
-object DSTConnector {
+object PostgresDSTConnector {
 
   /**
    * Insert stage record into DST

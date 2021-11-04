@@ -1,7 +1,7 @@
 package com.bah.app.config
 
 import Schema._
-import com.bah.app.config.Credentials.TABLE_NAME
+import com.bah.app.config.DBInfo.TABLE_NAME
 
 /**
  * Query parameters for DST

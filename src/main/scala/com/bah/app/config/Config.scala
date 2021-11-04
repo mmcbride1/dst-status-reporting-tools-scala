@@ -1,6 +1,6 @@
 package com.bah.app.config
 
-import Credentials.{HOST, DATABASE}
+import DBInfo.{HOST, DATABASE}
 
 /**
  * Configuration parameters for
@@ -9,17 +9,17 @@ import Credentials.{HOST, DATABASE}
 object Config {
 
   // JDBC driver to use
-  final val DRIVER: String = "com.mysql.cj.jdbc.Driver"
+  final val DRIVER: String = "org.postgresql.Driver"
 
   // Database port being
   // used
-  private final val MYSQL_PORT: Int = 3307
+  private final val PORT: Int = 5432
 
   /**
    * Provide connection URL
    */
   def getUrlString: String = {
-    s"jdbc:mysql://$HOST:$MYSQL_PORT/$DATABASE"
+    s"jdbc:postgresql://$HOST:$PORT/$DATABASE"
   }
 
 }
