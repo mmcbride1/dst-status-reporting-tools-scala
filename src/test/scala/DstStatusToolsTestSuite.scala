@@ -1,7 +1,7 @@
 import org.scalatest.{BeforeAndAfter, FunSuite}
 import com.bah.app.config.Config._
 import com.bah.app.config.Schema.STAGES_SCHEMA
-import com.bah.app.DSTConnector._
+import com.bah.app.PostgresDSTConnector._
 
 /**
  * Test for DST record insert.
